@@ -1,6 +1,6 @@
 
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import Contador from './src/componentes/contador';
+import Calculo from './src/componentes/calculo';
 import { StyleSheet } from 'react-native';
 
 
@@ -8,7 +8,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={style.container} >
-        <Contador inicial={10} passo={2} />
+        <Calculo />
       </SafeAreaView>
     </SafeAreaProvider>
   );
@@ -17,7 +17,8 @@ export default function App() {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#fff',
+    alignItems: 'center',     // Alinha horizontalmente (centro da largura)
+    justifyContent: 'center', // Alinha vertically (centro da altura)
   }
 });

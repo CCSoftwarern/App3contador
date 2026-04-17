@@ -8,7 +8,6 @@ let inc = () => setNumero(numero + passo)
 let dec = () => setNumero(numero - passo)
 return (
     <View>
-       
             <View style={style.btn}>
                 <Button title=" + " onPress={inc} />
 
