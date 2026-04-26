@@ -1,6 +1,6 @@
 
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import Calculo from './src/componentes/calculo';
+import Sorteador from './src/componentes/sorteador';
 import { StyleSheet } from 'react-native';
 
 
@@ -8,17 +8,19 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={style.container} >
-        <Calculo />
+        <Sorteador />
       </SafeAreaView>
     </SafeAreaProvider>
   );
 }
 
 const style = StyleSheet.create({
-  container: {
+   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',     // Alinha horizontalmente (centro da largura)
-    justifyContent: 'center', // Alinha vertically (centro da altura)
-  }
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    backgroundColor: '#ecf0f1',
+    padding: 8,
+  },
 });

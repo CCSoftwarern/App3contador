@@ -49,8 +49,7 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    justifyContent: 'center', 
-     
+    justifyContent: 'center',   
     paddingHorizontal: 20,  
   },
   input: {
